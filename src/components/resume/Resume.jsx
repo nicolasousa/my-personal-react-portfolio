@@ -10,7 +10,7 @@ const Resume = () => {
       <div className="resume__container grid">
         <div className="timeline grid">
           {Data.map((val, id) => {
-            if(val.category === 'education'){
+            if(id % 2 == 1){
               return(
                 <Card key={id} 
                   icon={val.icon} 
@@ -24,7 +24,7 @@ const Resume = () => {
 
         <div className="timeline grid">
           {Data.map((val, id) => {
-            if(val.category === 'course'){
+            if(id % 2 == 0){
               return(
                 <Card key={id} 
                   icon={val.icon} 
