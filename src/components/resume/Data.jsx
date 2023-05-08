@@ -23,6 +23,14 @@ const Data = [
         title: "Python - Básico",
         desc: "Formado no curso de Python - Básico da Fatec, fornecido pela prefeitura de Santana de Parnaíba",
     },
+    {
+        id: 4,
+        category: "course",
+        icon: "icon-eyeglass",
+        year:"2022-2023",
+        title: "Javascript - Básico",
+        desc: "Curso de Javascript nível básico da fundação Bradesco",
+    },
 ]
 
 export default Data
