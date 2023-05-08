@@ -1,0 +1,115 @@
+
+
+.btn{
+    margin-bottom: 2rem;
+}
+.home{
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro{
+    max-width: 1040px;
+    text-align: center;
+}
+
+.home__img{
+    border-radius: 100%;
+    width: 470px;
+    height: 500px;
+    margin-bottom: 1.5rem;
+    transition: 0.5s;
+}
+.home__img:hover{
+    box-shadow: 0 0 60px #510f8f; 
+    transform: scale(1.01);
+}
+
+.home__name{
+    font-family: Kanit;
+    font-size: 6rem;
+    font-weight: var(--font-bold);
+    margin-bottom: 0.5rem;
+}
+
+.home__name:hover{
+    transform: scale(1.1);
+}
+
+.home__socials{
+    display: flex;
+    justify-content: center;
+    column-gap: 1.75rem;
+    margin: 1.5rem 0;
+}
+
+i{
+    height: 10px;
+    width: 10px;
+}
+.home__social-link{
+    color: #ffff;
+    font-size: 1.3rem;
+    transition: .3s;
+}
+
+.home__social-link:hover{
+    color: hsl(291, 100%, 68%);
+}
+
+.scroll__down{
+    position: absolute;
+    bottom: 2.5rem;
+    left: 0;
+    width: 100%;
+}
+
+.home__scroll-name{
+    font-size: var(--small-font-size);
+    margin-top: 10px ;
+    color: hsl(269, 77%, 43%);
+}
+
+.mouse{
+    border: 2px solid #e90eff;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+}
+
+@keyframes ani-mouse {
+    0% {
+        top: 29%;
+    }
+
+    15% {
+        top: 50%;
+    }
+
+    50% {
+        top: 50%;
+    }
+
+    100%{
+        top: 29%;
+    }
+}
+
+.wheel{
+    background-color: var(--title-color);
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translate(-50%);
+    animation: ani-mouse 2s linear infinite;
+}
